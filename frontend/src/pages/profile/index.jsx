@@ -20,6 +20,7 @@ export default function ProfilePage() {
     const [userPosts, setUserPosts] = useState([]);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalEducationOpen, setIsModalEducationOpen] = useState(false);
 
     const [inputData, setInputData] = useState({
         company: '',
@@ -234,7 +235,7 @@ export default function ProfilePage() {
                       
                   </div><br/>
                   <button onClick={() => {
-                        setIsModalOpen(true);
+                        setIsModalEducationOpen(true);
                     }} className={styles.addEducationButton}>
                         Add Education
                     </button>
@@ -282,9 +283,9 @@ export default function ProfilePage() {
 
 
             {
-                isModalOpen && 
+                isModalEducationOpen && 
                 <div onClick={() => {
-                  setIsModalOpen(false);
+                  setIsModalEducationOpen(false);
                 }} className={styles.commentsContainer}>
 
                     <div onClick={(e) => {
@@ -297,7 +298,7 @@ export default function ProfilePage() {
 
                         <div onClick={() => {
                             setUserProfile({ ...userProfile, education: [...userProfile.education, inputEducationData ]})
-                            setIsModalOpen(false);
+                            setIsModalEducationOpen(false);
                         }} className={styles.updateProfileButton}>
                             Add Education
                         </div>
