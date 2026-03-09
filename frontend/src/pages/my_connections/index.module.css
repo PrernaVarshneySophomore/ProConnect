@@ -1,0 +1,73 @@
+.myConnections {
+    width: 100%;
+    /* max-width: 700px; */
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.userCard {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 650px;
+    padding: 1rem 1.4rem;
+    margin-top: 1rem;
+    background: rgb(192, 235, 164);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.userCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.12);
+}
+
+.profilePicture img {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.userInfo h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.userInfo p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.acceptButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(244, 247, 250, 0.905);
+    outline: none;
+    border: 1px solid rgba(3, 93, 183, 0.905);
+    color: rgba(3, 93, 183, 0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rejectButton {
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(244, 247, 250, 0.905);
+    outline: none;
+    border: 1px solid rgba(243, 11, 11, 0.905);
+    color: rgba(243, 11, 11, 0.905);
+    border-radius: 10px;
+    cursor: pointer;
+}
